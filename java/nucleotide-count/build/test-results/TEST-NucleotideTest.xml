@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NucleotideTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2016-02-05T00:16:30" hostname="Luiss-MacBook-Air.local" time="0.754">
+  <properties/>
+  <testcase name="testDnaCountsDoNotChangeAfterCountingAdenosine" classname="NucleotideTest" time="0.418"/>
+  <testcase name="testEmptyDnaStringHasNoAdenosine" classname="NucleotideTest" time="0.086"/>
+  <testcase name="testEmptyDnaStringHasNoNucleotides" classname="NucleotideTest" time="0.006"/>
+  <testcase name="testRepetitiveCytidineGetsCounted" classname="NucleotideTest" time="0.04"/>
+  <testcase name="testRepetitiveSequenceWithOnlyGuanosine" classname="NucleotideTest" time="0.003"/>
+  <testcase name="testCountsOnlyThymidine" classname="NucleotideTest" time="0.008"/>
+  <testcase name="testCountsANucleotideOnlyOnce" classname="NucleotideTest" time="0.014"/>
+  <testcase name="testValidatesNucleotides" classname="NucleotideTest" time="0.014"/>
+  <testcase name="testCountsAllNucleotides" classname="NucleotideTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
