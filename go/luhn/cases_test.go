@@ -1,8 +1,8 @@
 package luhn
 
 // Source: exercism/problem-specifications
-// Commit: e0358d3 luhn: Apply new "input" policy (#1054)
-// Problem Specifications Version: 1.1.0
+// Commit: 4a80663 luhn: non-digit at end is invalid
+// Problem Specifications Version: 1.4.0
 
 var testCases = []struct {
 	description string
@@ -45,8 +45,18 @@ var testCases = []struct {
 		false,
 	},
 	{
+		"valid number with an even number of digits",
+		"095 245 88",
+		true,
+	},
+	{
 		"valid strings with a non-digit included become invalid",
 		"055a 444 285",
+		false,
+	},
+	{
+		"valid strings with a non-digit added at the end become invalid",
+		"059a",
 		false,
 	},
 	{
@@ -73,5 +83,10 @@ var testCases = []struct {
 		"input digit 9 is correctly converted to output digit 9",
 		"091",
 		true,
+	},
+	{
+		"strings with non-digits is invalid",
+		":9",
+		false,
 	},
 }
